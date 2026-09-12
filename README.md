@@ -1,9 +1,21 @@
 # Interactive Visual Lab
 
-Interactive artworks by Emil Goodman.
+Interactive visual artworks by Emil Goodman.
 
 - Organism — Character Field
 - Chain Choir — Touch Voices
 - Abyssal — Specimen 06
 
-The public index and player are maintained in this repository and deployed with Vercel.
+## Open and explore
+The root index lists every curated work. `/play/?work=organism`, `/play/?work=chain-choir` and `/play/?work=abyssal` are permanent launch links with Index, Previous and Next navigation. Older experiment paths remain available.
+
+## Extend the lab
+Add the new artwork under `public/experiments/<name>/v<number>/`, then append its title, description, stable ID and path to `public/lab/catalog.mjs`. The list and neighboring links update automatically. Preserve published IDs and numbered folders.
+
+## Development and publishing
+Plain browser Canvas, JavaScript and CSS; no framework or package install. Run `node scripts/prepare-assets.mjs`, then serve `public/` using a static HTTP server. Vercel uses the same preparation step and serves `public/`. The four large hand-tracking binaries are downloaded from pinned URLs and verified against SHA-256 hashes. All runtime resources are served from this site. Camera frames stay in the browser.
+
+Connect this GitHub repository to Vercel with `main` as the production branch. Every commit to main creates a production deployment.
+
+## Licenses
+The bundled Noto Sans Symbols 2 font uses the SIL Open Font License; license files are included beside each copy. The MediaPipe runtime/model license and source records are under `public/experiments/organic/v4/vendor/`.

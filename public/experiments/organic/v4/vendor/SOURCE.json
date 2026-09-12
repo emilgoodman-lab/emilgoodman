@@ -1,0 +1,9 @@
+{
+  "library": "@mediapipe/tasks-vision",
+  "version": "1.0.1",
+  "package": "https://registry.npmjs.org/@mediapipe/tasks-vision/-/tasks-vision-1.0.1.tgz",
+  "model": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/latest/hand_landmarker.task",
+  "model_sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1",
+  "documentation": "https://developers.google.com/edge/mediapipe/solutions/vision/hand_landmarker/web_js",
+  "license": "Apache-2.0; see mediapipe/LICENSE"
+}

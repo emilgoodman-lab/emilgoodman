@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#080808"><meta name="description" content="A dense organism of permanent geometric glyphs, with three independently moving layers and a live simulation monitor.">
+<title>ORGANISM IV — CHARACTER FIELD</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3L29 16L16 29L3 16Z' fill='none' stroke='white' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preload" href="./fonts/symbols.ttf" as="font" type="font/ttf" crossorigin><link rel="stylesheet" href="./style.css"><script src="./organism.js" defer></script><script type="module" src="./camera.js"></script>
+</head>
+<body><main>
+<header><span aria-hidden="true">▣</span><strong>INTERACTIVE VISUAL LAB</strong><span class="header-right">ORGANISM.IV</span></header>
+<div class="menubar"><span>CHARACTER FIELD</span><span class="menu-detail">/ THREE LIVING MEMBRANES</span><span class="edition">VOL. IV</span></div>
+<canvas id="organism" tabindex="0" aria-label="Organic sculpture of permanent geometric characters. Move your mouse or drag to rotate the layers. Hold to separate them. Arrow keys steer; hold Space to expand."></canvas>
+<aside class="controls" aria-label="Simulation controls">
+<div class="panel-title">▣ FIELD CONTROLS</div>
+<label for="particle-size">PARTICLE SIZE <output id="size-value" for="particle-size">1.00×</output></label>
+<input id="particle-size" type="range" min="0.3" max="2.5" step="0.05" value="1">
+<label for="motion-amplitude">MOTION AMPLITUDE <output id="amplitude-value" for="motion-amplitude">1.00×</output></label>
+<input id="motion-amplitude" type="range" min="0" max="2.5" step="0.05" value="1">
+<label for="field-scale">SPATIAL SIZE <output id="scale-value" for="field-scale">1.00×</output></label>
+<input id="field-scale" type="range" min="0.4" max="1.6" step="0.05" value="1">
+<button id="camera-toggle" type="button" aria-pressed="false">[ ENABLE WEBCAM ]</button>
+</aside>
+<aside class="camera-panel" aria-label="Hand tracking camera">
+<div class="panel-title">▣ CAMERA / 2-BIT</div>
+<div class="camera-image"><canvas id="camera-pixels" width="160" height="120" aria-label="Black and white pixel camera preview"></canvas><span id="camera-placeholder">CAMERA OFF</span></div>
+<p id="camera-status" role="status">Enable webcam to control with your hand.</p><p class="camera-note">OPEN HAND: MOVE / FIST: EXPAND<br>LOCAL ONLY · NO RECORDING</p>
+</aside>
+<aside class="monitor" aria-label="Live simulation variables"><div class="monitor-title"><span>▣ SIMULATION / LIVE</span><button class="collapse" aria-expanded="true" aria-controls="readout" aria-label="Minimize simulation monitor">−</button></div><pre id="readout" aria-label="Current simulation values">initializing simulation…</pre></aside>
+<footer><div class="instructions"><p>MOVE TO INFLUENCE</p><p class="secondary">HOLD TO OPEN THE LAYERS</p></div><button class="pause" aria-pressed="false">[ PAUSE ]</button></footer>
+<div class="statusbar"><span>EG / ORGANIC SYSTEMS</span><span>MONOCHROME · GLYPH STUDY</span></div>
+<noscript>Enable JavaScript to run this artwork.</noscript>
+</main></body></html>
