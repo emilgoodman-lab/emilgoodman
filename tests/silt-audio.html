@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Silt audio verification</title><pre id="result">Rendering actual granular and atmospheric graphs…</pre><script type="module">
+import {buildSiltAudio} from '/experiments/silt/v1/audio.mjs';
+const results=[];
+for(const state of [{name:'rest',activity:0,zero:false},{name:'sparse sand',activity:.1,zero:false},{name:'dense sand',activity:.9,zero:false},{name:'zero atmosphere',activity:.5,zero:true}]){const ctx=new OfflineAudioContext(2,48000*5,48000),graph=buildSiltAudio(ctx);graph.master.gain.value=.4;for(let t=0;t<3;t+=1/30)graph.update({...state,time:t},t);graph.update({time:3,activity:0,zero:false},3);const buffer=await ctx.startRendering(),l=buffer.getChannelData(0),r=buffer.getChannelData(1);let peak=0,power=0,stereo=0,tail=0;for(let i=0;i<l.length;i++){peak=Math.max(peak,Math.abs(l[i]),Math.abs(r[i]));power+=l[i]*l[i];stereo+=Math.abs(l[i]-r[i]);if(i>48000*3.7)tail+=Math.abs(l[i]);}results.push({...state,peak,rms:Math.sqrt(power/l.length),stereo:stereo/l.length,tail:tail/(48000*1.3)});graph.dispose();}
+document.querySelector('#result').textContent=JSON.stringify({results,pass:results[0].peak===0&&results[2].rms>results[1].rms*1.5&&results[3].tail>.0001&&results.slice(1).every(r=>r.peak>.001&&r.peak<.8&&r.stereo>.00001)},null,2);
+</script></html>

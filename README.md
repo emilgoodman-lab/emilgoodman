@@ -8,9 +8,10 @@ Interactive visual artworks by Emil Goodman.
 - Chain Choir — Touch Voices
 - Abyssal — Specimen 06
 - Rotor — Glyph Resonator
+- Silt — Granular Matter
 
 ## Open and explore
-The root index lists every curated work. `/play/?work=organism`, `/play/?work=chain-choir` `/play/?work=abyssal` and `/play/?work=rotor` are permanent launch links with Index, Previous and Next navigation. Older experiment paths remain available.
+The root index lists every curated work. `/play/?work=organism`, `/play/?work=chain-choir`, `/play/?work=abyssal`, `/play/?work=rotor` and `/play/?work=silt` are permanent launch links with Index, Previous and Next navigation. Older experiment paths remain available.
 
 ## Extend the lab
 Add the new artwork under `public/experiments/<name>/v<number>/`, then append its title, description, stable ID and path to `public/lab/catalog.mjs`. The list and neighboring links update automatically. Preserve published IDs and numbered folders.
@@ -28,3 +29,10 @@ The bundled Noto Sans Symbols 2 font uses the SIL Open Font License; license fil
 
 Verification: `node --test tests/rotor.test.mjs tests/catalog.test.mjs`. The audio harness in `tests/rotor-audio.html` renders the actual calm and distorted graphs with OfflineAudioContext; temporarily serve it from the public root to run it.
 
+## Silt — Granular Matter
+
+2000 permanent geometric glyph grains with seeded sizes from 70% to 130%. Every grain collides as a smooth circular body inside the canvas walls. A fixed 120 Hz solver, soft positional contacts, inelastic friction and stable resting bodies minimize pile jitter. The circular pointer, touch or open-hand field stirs the settled material; movement and contact density drive granular stereo sound.
+
+Holding the pointer, Space, or a tracked fist disables gravity and inverts the chamber only for the duration of the hold. The stirring field remains active while particles float. Zero gravity crossfades to low electronic partials and long filtered stereo echoes; release restores gravity and the dry granular sound. Camera processing remains local.
+
+Verification: `node --test tests/silt.test.mjs tests/catalog.test.mjs`. The actual audio graph is tested in `tests/silt-audio.html`; sustained and released hand states are tested in `tests/silt-ui.html`.
