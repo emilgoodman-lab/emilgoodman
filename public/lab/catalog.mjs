@@ -4,7 +4,7 @@ export const works=Object.freeze([
  {id:'chain-choir',title:'Chain Choir',edition:'Touch Voices',description:'Sixteen suspended chains. Touch becomes sound.',path:'/experiments/chimes/v3/',input:'MOUSE · TOUCH · HAND',audio:true},
  {id:'abyssal',title:'Abyssal',edition:'Specimen 06',description:'A mechanical creature in a fluid habitat.',path:'/experiments/abyssal/v1/',input:'MOUSE · TOUCH · HAND',audio:true},
  {id:'rotor',title:'Rotor',edition:'Glyph Resonator',description:'Concentric glyph rings. Four fields and infinite reflections.',path:'/experiments/rotor/v1/',input:'MOUSE · TOUCH · HAND',audio:true},
- {id:'silt',title:'Silt',edition:'Granular Matter',description:'Two thousand colliding glyph grains. Stir, suspend, release.',path:'/experiments/silt/v1/',input:'MOUSE · TOUCH · HAND',audio:true}
+ {id:'silt',title:'Silt II',edition:'Dynamic Granular Matter',description:'Two thousand colliding glyph grains. Stir, suspend, release.',path:'/experiments/silt/v2/',input:'MOUSE · TOUCH · HAND',audio:true}
 ]);
 export const workURL=id=>`/play/?work=${encodeURIComponent(id)}`;
 export function navigation(id,catalog=works){const index=catalog.findIndex(work=>work.id===id);if(index<0||!catalog.length)return null;return {work:catalog[index],index,total:catalog.length,previous:catalog[(index-1+catalog.length)%catalog.length],next:catalog[(index+1)%catalog.length]};}
