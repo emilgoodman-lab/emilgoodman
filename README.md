@@ -7,9 +7,10 @@ Interactive visual artworks by Emil Goodman.
 - Organism — Character Field
 - Chain Choir — Touch Voices
 - Abyssal — Specimen 06
+- Rotor — Glyph Resonator
 
 ## Open and explore
-The root index lists every curated work. `/play/?work=organism`, `/play/?work=chain-choir` and `/play/?work=abyssal` are permanent launch links with Index, Previous and Next navigation. Older experiment paths remain available.
+The root index lists every curated work. `/play/?work=organism`, `/play/?work=chain-choir` `/play/?work=abyssal` and `/play/?work=rotor` are permanent launch links with Index, Previous and Next navigation. Older experiment paths remain available.
 
 ## Extend the lab
 Add the new artwork under `public/experiments/<name>/v<number>/`, then append its title, description, stable ID and path to `public/lab/catalog.mjs`. The list and neighboring links update automatically. Preserve published IDs and numbered folders.
@@ -21,3 +22,9 @@ This repository is connected to the Interactive Visual Lab Vercel project. Every
 
 ## Licenses
 The bundled Noto Sans Symbols 2 font uses the SIL Open Font License; license files are included beside each copy. The MediaPipe runtime/model license and source records are under `public/experiments/organic/v4/vendor/`.
+
+## Rotor — Glyph Resonator
+28 concentric rings, each built from one permanent geometric glyph. Independent slow rotations; four overlapping pointer/hand fields: top depth tunnel with distance shading, right spring-delayed XY drift, bottom sequential glyph turns, left proportional spatial tilt. Center combines all four. Kaleidoscope steps run from original through a single mirror to 16 reflected sectors. Click/tap or a new fist closure toggles inversion, oscillation and distorted electronic resonances; reopening the hand rearms the toggle. Sound requires Enable Sound. Stereo echoes and slow pitch/amplitude motion accompany a continuous electronic prayer-wheel timbre. Reduced motion starts paused; no automatic strobe. All earlier versions remain available.
+
+Verification: `node --test tests/rotor.test.mjs tests/catalog.test.mjs`. The audio harness in `tests/rotor-audio.html` renders the actual calm and distorted graphs with OfflineAudioContext; temporarily serve it from the public root to run it.
+
