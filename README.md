@@ -10,7 +10,7 @@ Interactive visual artworks by Emil Goodman.
 - Rotor — Glyph Resonator
 - Silt II — Dynamic Granular Matter
 - Weave II — Elastic Resonance
-- Strata III — Ring Broom
+- Strata IV — Exclusion Ring
 
 ## Open and explore
 The root index lists every curated work. Every catalog ID has a permanent `/play/?work=<id>` launch link with Index, Previous and Next navigation. Older experiment paths remain available.
@@ -76,3 +76,11 @@ The table now carries exactly 5000 grains divided across three independent colli
 The dashed circle itself is the broom. Its narrow circumference collides with grains from either side and transfers the ring's movement; the entire interior has zero sweep influence. Held pointer, Space and fist retain the established full-table multidirectional wind, inversion and directional stereo sound. Strata I and II remain preserved at their versioned paths.
 
 Verification: `node --test tests/strata-v3.test.mjs tests/catalog.test.mjs`; `tests/strata-v3-audio.html` and `tests/strata-v3-ui.html` cover the unchanged sound and held-input behavior in the new build.
+
+## Strata IV — Exclusion Ring
+
+The dashed circular tool is now an impenetrable exclusion boundary. A grain's complete physical body is projected outside the circle after every collision pass, so grains cannot enter or remain inside even when the pointer moves quickly. Boundary contact reflects inward motion and transfers a restrained part of the tool velocity for a firm, dynamic sweep.
+
+All Strata III material settings remain: exactly 5000 permanent glyphs, the 1667 / 1667 / 1666 independent layer split, half-Strata-II scale, held multidirectional wind, inversion and directional stereo sound. Strata III remains preserved at `/experiments/strata/v3/`.
+
+Verification: `node --test tests/strata-v4.test.mjs tests/catalog.test.mjs`; `tests/strata-v4-audio.html` and `tests/strata-v4-ui.html` cover the retained sound graph and sustained hand/keyboard states.
