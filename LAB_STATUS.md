@@ -4,6 +4,13 @@ The seven-work collection is LIVE at https://interactive-visual-lab.vercel.app/.
 
 The records below describe earlier local stages and are historical, not current deployment status.
 
+## Strata III — Ring Broom / 2026-09-13
+
+- Release candidate: `/experiments/strata/v3/`; stable player `/play/?work=strata`. Strata I and II remain preserved.
+- Exactly 5000 permanent grains occupy three independent layers of 1667 / 1667 / 1666. Grain render and collision radii are half the Strata II scale.
+- Sweep influence is zero throughout the circle interior. Only the dashed circumference acts as a narrow two-sided collision boundary and transfers pointer or hand motion to the grains it crosses.
+- The existing held multidirectional wind, inversion and directional stereo audio remain unchanged. Eight catalog and Strata III physics checks passed; actual audio rendering and synthetic hand/keyboard states passed. All 65 lab tests passed; production verification is in progress.
+
 ## Strata II — Solid Broom / 2026-09-13
 
 - Live release: `/experiments/strata/v2/`; the stable `/play/?work=strata` player selects it. Strata I remains preserved.

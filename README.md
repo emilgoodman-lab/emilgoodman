@@ -10,7 +10,7 @@ Interactive visual artworks by Emil Goodman.
 - Rotor — Glyph Resonator
 - Silt II — Dynamic Granular Matter
 - Weave II — Elastic Resonance
-- Strata II — Solid Broom
+- Strata III — Ring Broom
 
 ## Open and explore
 The root index lists every curated work. Every catalog ID has a permanent `/play/?work=<id>` launch link with Index, Previous and Next navigation. Older experiment paths remain available.
@@ -68,3 +68,11 @@ Verification: `node --test tests/strata.test.mjs tests/catalog.test.mjs`. `tests
 The stable Strata player now uses four-times-larger visible and physical grains. A seeded near-regular scatter gives each 1000-grain layer enough room to settle without losing its granular irregularity. The circular sweep is solid across 92% of its radius, with a smooth transition confined to the outermost 8%, so the field behaves like a physical broom instead of a broad gradient. The established multidirectional held wind and sound system remain intact. Strata I stays preserved at `/experiments/strata/v1/`.
 
 Verification: `node --test tests/strata-v2.test.mjs tests/catalog.test.mjs`; `tests/strata-v2-audio.html` and `tests/strata-v2-ui.html` run the sound and synthetic input checks against the revised stable version.
+
+## Strata III — Ring Broom
+
+The table now carries exactly 5000 grains divided across three independent collision layers: 1667, 1667 and 1666. Each grain is half the Strata II scale, while retaining its permanent glyph and ±25% seeded size variation.
+
+The dashed circle itself is the broom. Its narrow circumference collides with grains from either side and transfers the ring's movement; the entire interior has zero sweep influence. Held pointer, Space and fist retain the established full-table multidirectional wind, inversion and directional stereo sound. Strata I and II remain preserved at their versioned paths.
+
+Verification: `node --test tests/strata-v3.test.mjs tests/catalog.test.mjs`; `tests/strata-v3-audio.html` and `tests/strata-v3-ui.html` cover the unchanged sound and held-input behavior in the new build.
