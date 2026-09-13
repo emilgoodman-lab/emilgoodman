@@ -10,9 +10,10 @@ Interactive visual artworks by Emil Goodman.
 - Rotor — Glyph Resonator
 - Silt II — Dynamic Granular Matter
 - Weave II — Elastic Resonance
+- Strata I — Sand Table
 
 ## Open and explore
-The root index lists every curated work. `/play/?work=organism`, `/play/?work=chain-choir`, `/play/?work=abyssal`, `/play/?work=rotor` and `/play/?work=silt` are permanent launch links with Index, Previous and Next navigation. Older experiment paths remain available.
+The root index lists every curated work. Every catalog ID has a permanent `/play/?work=<id>` launch link with Index, Previous and Next navigation. Older experiment paths remain available.
 
 ## Extend the lab
 Add the new artwork under `public/experiments/<name>/v<number>/`, then append its title, description, stable ID and path to `public/lab/catalog.mjs`. The list and neighboring links update automatically. Preserve published IDs and numbered folders.
@@ -53,3 +54,11 @@ The wave now starts as a slow, local two-pixel motion and grows through a smooth
 The calm audio reads the same live sine value as the visual simulation. Every trough-to-crest cycle drives both amplitude and pitch while screen position retains its tonal mapping. The held knot uses a wider elastic field: roughly 60% more glyphs gather into its core than in Weave I, while tension and high-frequency motion reach most of the remaining fabric. Weave I remains preserved at `/experiments/weave/v1/`.
 
 Verification: `node --test tests/weave-v2.test.mjs tests/catalog.test.mjs`. The actual synchronized trough/crest, positional voices, distortion and echo are rendered in `tests/weave-v2-audio.html`; hand-state behavior is covered by `tests/weave-v2-ui.html`.
+
+## Strata I — Sand Table
+
+Three superimposed layers each contain exactly 1000 permanent, uncommon geometric glyph grains. Contacts are solved only within the grain's own layer, creating three independent materials across one monochrome table. Seeded grain sizes vary from 75% to 125%.
+
+Pointer, touch or an open tracked hand acts as a circular broom that pushes, rolls and scatters nearby grains. Holding the pointer, Space, or a tracked fist inverts the chamber and starts a continuously changing multidirectional wind field that moves nearly the whole table. Three continuous sand bands and additive individual impacts become denser with contacts; held wind adds three stereo white-noise bands panned toward its strongest direction and spatial feedback echoes.
+
+Verification: `node --test tests/strata.test.mjs tests/catalog.test.mjs`. `tests/strata-audio.html` renders and measures the real rest, light/dense sweep and left/right turbine graphs; `tests/strata-ui.html` verifies sustained fist, tracking loss and keyboard states.

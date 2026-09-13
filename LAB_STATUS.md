@@ -1,16 +1,25 @@
 # Current public lab status / 2026-09-13
 
-The six-work collection is LIVE at https://interactive-visual-lab.vercel.app/. GitHub: emilgoodman-lab/emilgoodman. The index now includes Weave I; each player has Previous / Next / Index. See PUBLISHING.md for the release workflow.
+The seven-work collection release candidate includes Strata I. Public deployment verification is pending. GitHub: emilgoodman-lab/emilgoodman. Each player has Previous / Next / Index. See PUBLISHING.md for the release workflow.
 
 The records below describe earlier local stages and are historical, not current deployment status.
 
+## Strata I — Sand Table / 2026-09-13
+
+- New independent artwork: `/experiments/strata/v1/`; stable player `/play/?work=strata`. All six earlier catalog works and their versioned paths remain preserved.
+- 3000 permanent uncommon glyph grains are divided into three exact 1000-grain collision layers. Seeded sizes vary by ±25%; layers pass through each other while every grain collides within its own layer and the canvas walls.
+- Pointer, touch and open hand sweep with a broad circular field. Held pointer, Space or fist inverts the chamber and generates continuously changing multidirectional turbulence across the table.
+- Three continuous granular textures plus additive stereo impacts follow layer contacts and movement. Held wind adds three white-noise bands, pans toward the strongest direction and feeds two spatial echoes.
+- Seven deterministic catalog and physics checks passed. The actual OfflineAudioContext graph verified silence at rest, contact-additive density, directional stereo wind and echo tails. Synthetic open-hand, sustained-fist, tracking-loss and keyboard states passed; the local player showed 007 / 007 with working audio, sweep and circular navigation. Production deployment verification is pending.
+
 ## Weave II — Elastic Resonance / 2026-09-13
 
-- Tested release candidate: `/experiments/weave/v2/`; the stable player will remain `/play/?work=weave`. Weave I remains preserved.
+- Live release: `/experiments/weave/v2/`; the stable player remains `/play/?work=weave`. Weave I remains preserved.
 - Replaced the abrupt initial motion with a phase-continuous cubic growth envelope: a slow local wave starts near 2 px / 50 px range and grows over about 3.2 seconds to the established full amplitude and a wider 340+ px range.
 - Calm audio is driven by the exact visual sine signal. Trough-to-crest position changes both gain and pitch continuously while screen position still sets the base tone.
 - The fist/pointer knot gathers roughly 60% more glyphs into the core, pulls more than 1200 outer nodes and keeps over 1300 nodes in active high-frequency motion in the deterministic desktop test.
 - Eight catalog, physics, envelope and audio-mapping checks passed. Real OfflineAudioContext renders verified the trough/crest relationship, position-dependent tone, distorted knot and echo. Synthetic hand states and desktop visuals passed.
+- GitHub release commit: `444371712e4ed85ce9b36e7fad1bafbf98497f07`. Vercel deployment `HkL3yg9pKkfEno73UqZCcuowRjFf` succeeded. The public player loaded Weave II as 006 / 006; the measured 9% to 100% growth, audio activation, navigation and clean browser execution were verified.
 
 ## Weave I — Elastic Field / 2026-09-13
 
