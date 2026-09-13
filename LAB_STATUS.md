@@ -1,16 +1,25 @@
 # Current public lab status / 2026-09-13
 
-The five-work collection is LIVE at https://interactive-visual-lab.vercel.app/. GitHub: emilgoodman-lab/emilgoodman. Weave I is the next tested release. Each player has Previous / Next / Index. See PUBLISHING.md for the release workflow.
+The six-work collection is LIVE at https://interactive-visual-lab.vercel.app/. GitHub: emilgoodman-lab/emilgoodman. The index now includes Weave I; each player has Previous / Next / Index. See PUBLISHING.md for the release workflow.
 
 The records below describe earlier local stages and are historical, not current deployment status.
 
+## Weave II — Elastic Resonance / 2026-09-13
+
+- Tested release candidate: `/experiments/weave/v2/`; the stable player will remain `/play/?work=weave`. Weave I remains preserved.
+- Replaced the abrupt initial motion with a phase-continuous cubic growth envelope: a slow local wave starts near 2 px / 50 px range and grows over about 3.2 seconds to the established full amplitude and a wider 340+ px range.
+- Calm audio is driven by the exact visual sine signal. Trough-to-crest position changes both gain and pitch continuously while screen position still sets the base tone.
+- The fist/pointer knot gathers roughly 60% more glyphs into the core, pulls more than 1200 outer nodes and keeps over 1300 nodes in active high-frequency motion in the deterministic desktop test.
+- Eight catalog, physics, envelope and audio-mapping checks passed. Real OfflineAudioContext renders verified the trough/crest relationship, position-dependent tone, distorted knot and echo. Synthetic hand states and desktop visuals passed.
+
 ## Weave I — Elastic Field / 2026-09-13
 
-- New independent artwork: `/experiments/weave/v1/`; planned stable player `/play/?work=weave`. All five earlier artworks remain preserved.
+- New independent artwork: `/experiments/weave/v1/`; stable player `/play/?work=weave`. All five earlier artworks remain preserved.
 - A regular screen-filling lattice of 90 permanent uncommon glyphs runs as an elastic X/Y/Z wave simulation. Pointer, touch and open-hand dwell build amplitude and propagation range.
 - Held pointer, Space or tracked fist pulls a broad area into an amorphous vibrating knot, transmits tension across the surrounding fabric and inverts only while held.
 - Four soft positional voices, stereo air and three feedback echoes form the calm sound. The knot adds three rapidly modulated voices, tremolo, moving filters and dynamic distortion.
 - Six catalog and physics tests passed. The actual OfflineAudioContext graph verified positional pitch change, wave-density growth, stereo separation, echo tail and the stronger distorted knot. Synthetic hand states passed; desktop visuals were inspected.
+- GitHub release commit: `755e8ce72fd1382d617562e0cd3cd10782903d44`. Vercel deployment `6iFgNjS8BB7ZJXUaHAHQTFpYpd8P` succeeded. The public player selected Weave I as item 006 / 006; sound, resonance, Index / Previous / Next and clean browser execution were verified.
 
 ## Silt — Granular Matter / 2026-09-13
 

@@ -9,7 +9,7 @@ Interactive visual artworks by Emil Goodman.
 - Abyssal — Specimen 06
 - Rotor — Glyph Resonator
 - Silt II — Dynamic Granular Matter
-- Weave I — Elastic Field
+- Weave II — Elastic Resonance
 
 ## Open and explore
 The root index lists every curated work. `/play/?work=organism`, `/play/?work=chain-choir`, `/play/?work=abyssal`, `/play/?work=rotor` and `/play/?work=silt` are permanent launch links with Index, Previous and Next navigation. Older experiment paths remain available.
@@ -45,3 +45,11 @@ A screen-filling regular fabric of permanent uncommon geometric glyphs. Pointer,
 Holding the pointer or closing a tracked fist pulls a broad region into an amorphous vibrating knot, transmits tension into the surrounding fabric and keeps the chamber inverted for the duration of the hold. The knot adds three rapidly modulated voices, dynamic distortion, tremolo and spatial feedback echoes. Release returns the image immediately and lets the physical fabric unfold back to its exact regular grid.
 
 Verification: `node --test tests/weave.test.mjs tests/catalog.test.mjs`. `tests/weave-audio.html` renders and measures the real calm, positional and distorted Web Audio graphs. `tests/weave-ui.html` verifies open-hand, sustained-fist and tracking-loss states.
+
+## Weave II — Elastic Resonance
+
+The wave now starts as a slow, local two-pixel motion and grows through a smooth cubic envelope to the full spatial deformation over roughly 3.2 seconds. Its radius expands from about 50 pixels to more than 340 pixels without changing phase abruptly. Glyph rotation follows the smooth depth displacement, removing the initial velocity jitter.
+
+The calm audio reads the same live sine value as the visual simulation. Every trough-to-crest cycle drives both amplitude and pitch while screen position retains its tonal mapping. The held knot uses a wider elastic field: roughly 60% more glyphs gather into its core than in Weave I, while tension and high-frequency motion reach most of the remaining fabric. Weave I remains preserved at `/experiments/weave/v1/`.
+
+Verification: `node --test tests/weave-v2.test.mjs tests/catalog.test.mjs`. The actual synchronized trough/crest, positional voices, distortion and echo are rendered in `tests/weave-v2-audio.html`; hand-state behavior is covered by `tests/weave-v2-ui.html`.
