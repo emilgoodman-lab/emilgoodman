@@ -4,6 +4,7 @@ const entry=navigation(id),stage=document.querySelector('#stage'),loading=docume
 if(!entry){loading.textContent='WORK NOT FOUND / RETURN TO INDEX';document.title='Work not found — Interactive Visual Lab';}
 else{
  document.title=`${entry.work.title} — Interactive Visual Lab`;
+ if(entry.work.immersive){document.querySelector('.transport').style.display='none';stage.style.height='100dvh';}
  document.querySelector('#position').textContent=`${String(entry.index+1).padStart(3,'0')} / ${String(entry.total).padStart(3,'0')}`;
  document.querySelector('#name').textContent=entry.work.title;document.querySelector('#index').href=`/#${entry.work.id}`;
  for(const [name,target] of [['previous',entry.previous],['next',entry.next]]){const a=document.querySelector(`#${name}`);a.href=workURL(target.id);a.title=`${name==='previous'?'Previous':'Next'}: ${target.title}`;a.hidden=false;}
