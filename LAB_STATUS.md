@@ -6,10 +6,11 @@ The records below describe earlier local stages and are historical, not current 
 
 ## Strata IV — Exclusion Ring / 2026-09-13
 
-- Release candidate: `/experiments/strata/v4/`; stable player `/play/?work=strata`. Strata I, II and III remain preserved.
+- Live release: `/experiments/strata/v4/`; stable player `/play/?work=strata`. Strata I, II and III remain preserved.
 - The visible dashed circle is a closed exclusion boundary. After every collision pass, the complete physical radius of every grain is kept outside it, including during fast pointer movement and near screen edges.
 - Boundary contact reflects inward grain motion and transfers restrained pointer or hand velocity. The existing 5000 grains, three independent layers, size range, held wind, inversion and stereo sound remain unchanged.
 - Nine catalog and Strata IV physics checks passed, including forced interior grains, fast movement, edge positions and held turbulence. The actual layered stereo audio render and synthetic open-hand, sustained-fist and keyboard states passed. Local browser inspection showed the full grain bodies forming a clean empty disk inside the dashed boundary. All 72 lab tests passed.
+- GitHub release commit: `b6501ef1d414e95092bf67803baac161b2170f03`. Vercel production deployment `D9BH19se4fMddnQrCjuiV4RJmBnU` is ready. The stable public player loaded Strata IV at 007 / 007 with all 5000 grains and visibly preserved an empty disk inside the dashed boundary.
 
 ## Strata III — Ring Broom / 2026-09-13
 
