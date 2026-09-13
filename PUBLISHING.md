@@ -29,3 +29,5 @@ Latest artwork release: Strata II, 10eecd7cfed03f4e5ff03ebdd49fff84f24315ca. Ver
 Latest artwork release: Strata III, 2a92a768cc1e80f729515666ab2fc3b02467fc61. Vercel production status succeeded at deployment FyrYMY4wJgiz4vvEtoLkK22TUxba. The stable `strata` player now selects `/experiments/strata/v3/`; Strata I and II remain preserved.
 
 Latest artwork release: Strata IV, b6501ef1d414e95092bf67803baac161b2170f03. Vercel production status succeeded at deployment D9BH19se4fMddnQrCjuiV4RJmBnU. The stable `strata` player now selects `/experiments/strata/v4/`; Strata I, II and III remain preserved.
+
+Latest artwork release: Aerosol I, d48b4a592ae152cb9775fc188c231b2219e2ac0d. Vercel production status succeeded at deployment GYqoNpgHWhD8ppNdSEpZygYANERE. Eight works are now in the catalog; the stable `aerosol` player selects `/experiments/aerosol/v1/`. All earlier works remain preserved.
