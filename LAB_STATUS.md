@@ -6,10 +6,11 @@ The records below describe earlier local stages and are historical, not current 
 
 ## Strata II — Solid Broom / 2026-09-13
 
-- Release candidate: `/experiments/strata/v2/`; the stable `/play/?work=strata` player now selects it. Strata I remains preserved.
+- Live release: `/experiments/strata/v2/`; the stable `/play/?work=strata` player selects it. Strata I remains preserved.
 - Grain render and collision radii are four times the original scale, with the same permanent ±25% size identities and exact 3 × 1000 layer split.
 - The broom applies full force through 92% of its circular footprint and feathers only across the outer 8% rim. The existing multidirectional held wind is unchanged.
-- Eight catalog and Strata II physics checks passed. The browser verified the dense four-times scale, hard circular clearing edge and quiet rest. The actual audio graph passed for rest, contact density, directional stereo wind and echoes; synthetic open-hand, sustained-fist, tracking-loss and keyboard states passed. All 59 lab tests passed; production checks are in progress.
+- Eight catalog and Strata II physics checks passed. The browser verified the dense four-times scale, hard circular clearing edge and quiet rest. The actual audio graph passed for rest, contact density, directional stereo wind and echoes; synthetic open-hand, sustained-fist, tracking-loss and keyboard states passed. All 59 lab tests passed.
+- GitHub release commit: `10eecd7cfed03f4e5ff03ebdd49fff84f24315ca`. Vercel deployment `9csjchFW5JKy9fYAqTF1Y8ZYKnCj` succeeded. The public stable player loaded Strata II at 007 / 007, showed the 4.0× scale, settled cleanly and produced the sharp circular sweep response.
 
 ## Strata I — Sand Table / 2026-09-13
 
