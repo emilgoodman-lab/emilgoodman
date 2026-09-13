@@ -1,6 +1,6 @@
 # Current public lab status / 2026-09-13
 
-The seven-work collection release candidate includes Strata I. Public deployment verification is pending. GitHub: emilgoodman-lab/emilgoodman. Each player has Previous / Next / Index. See PUBLISHING.md for the release workflow.
+The seven-work collection is LIVE at https://interactive-visual-lab.vercel.app/. GitHub: emilgoodman-lab/emilgoodman. Each player has Previous / Next / Index. See PUBLISHING.md for the release workflow.
 
 The records below describe earlier local stages and are historical, not current deployment status.
 
@@ -10,7 +10,8 @@ The records below describe earlier local stages and are historical, not current 
 - 3000 permanent uncommon glyph grains are divided into three exact 1000-grain collision layers. Seeded sizes vary by ±25%; layers pass through each other while every grain collides within its own layer and the canvas walls.
 - Pointer, touch and open hand sweep with a broad circular field. Held pointer, Space or fist inverts the chamber and generates continuously changing multidirectional turbulence across the table.
 - Three continuous granular textures plus additive stereo impacts follow layer contacts and movement. Held wind adds three white-noise bands, pans toward the strongest direction and feeds two spatial echoes.
-- Seven deterministic catalog and physics checks passed. The actual OfflineAudioContext graph verified silence at rest, contact-additive density, directional stereo wind and echo tails. Synthetic open-hand, sustained-fist, tracking-loss and keyboard states passed; the local player showed 007 / 007 with working audio, sweep and circular navigation. Production deployment verification is pending.
+- Seven deterministic catalog and physics checks passed. The actual OfflineAudioContext graph verified silence at rest, contact-additive density, directional stereo wind and echo tails. Synthetic open-hand, sustained-fist, tracking-loss and keyboard states passed; the complete 53-test lab suite passed.
+- GitHub release commit: `c11ee6192f84e71d230764143083eecc149a8ee1`. Vercel deployment `52smBoTGNtLsbrn3rgNBBA33o7DG` succeeded. The public player loaded Strata I as 007 / 007 with all 3000 grains; sound, sweep, transient held inversion and Previous / Next links were verified.
 
 ## Weave II — Elastic Resonance / 2026-09-13
 
