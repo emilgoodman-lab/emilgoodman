@@ -6,7 +6,8 @@ export const works=Object.freeze([
  {id:'rotor',title:'Rotor',edition:'Glyph Resonator',description:'Concentric glyph rings. Four fields and infinite reflections.',path:'/experiments/rotor/v1/',input:'MOUSE · TOUCH · HAND',audio:true},
  {id:'silt',title:'Silt II',edition:'Dynamic Granular Matter',description:'Two thousand colliding glyph grains. Stir, suspend, release.',path:'/experiments/silt/v2/',input:'MOUSE · TOUCH · HAND',audio:true},
  {id:'weave',title:'Weave II',edition:'Elastic Resonance',description:'A glyph fabric whose visual and sonic sine rise together.',path:'/experiments/weave/v2/',input:'MOUSE · TOUCH · HAND',audio:true},
- {id:'strata',title:'Strata IV',edition:'Exclusion Ring',description:'Five thousand glyph grains flow around an impenetrable moving circular boundary.',path:'/experiments/strata/v4/',input:'MOUSE · TOUCH · HAND',audio:true}
+ {id:'strata',title:'Strata IV',edition:'Exclusion Ring',description:'Five thousand glyph grains flow around an impenetrable moving circular boundary.',path:'/experiments/strata/v4/',input:'MOUSE · TOUCH · HAND',audio:true},
+ {id:'aerosol',title:'Aerosol I',edition:'Faulty Nozzle',description:'Layered ASCII paint, broken spray and drying glyph drips on white.',path:'/experiments/aerosol/v1/',input:'MOUSE · TOUCH · HAND',audio:true}
 ]);
 export const workURL=id=>`/play/?work=${encodeURIComponent(id)}`;
 export function navigation(id,catalog=works){const index=catalog.findIndex(work=>work.id===id);if(index<0||!catalog.length)return null;return {work:catalog[index],index,total:catalog.length,previous:catalog[(index-1+catalog.length)%catalog.length],next:catalog[(index+1)%catalog.length]};}

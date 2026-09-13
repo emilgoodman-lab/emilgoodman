@@ -1,6 +1,8 @@
 import {describeHand,FistLatch,dither2bit} from '../../organic/v4/hand-math.mjs';
 const button=document.querySelector('#camera-toggle');
 const status=document.querySelector('#camera-status');
+const openLabel=status.dataset.open||'TRACKING / OPEN HAND / SWEEP';
+const fistLabel=status.dataset.fist||'TRACKING / FIST / TURBINE';
 const placeholder=document.querySelector('#camera-placeholder');
 const pixels=document.querySelector('#camera-pixels');
 const ctx=pixels.getContext('2d',{willReadFrequently:true,alpha:false});
@@ -67,7 +69,7 @@ async function start(){
         if(!tracked){handX=hand.x;handY=hand.y;}else{handX+=(hand.x-handX)*.4;handY+=(hand.y-handY)*.4;}
         tracked=true;box=hand.box;const fist=latch.update(hand.fist,lastResult);
         publish({tracked:true,x:handX,y:handY,fist});
-        status.textContent=fist?'TRACKING / FIST / TURBINE':'TRACKING / OPEN HAND / SWEEP';
+        status.textContent=fist?fistLabel:openLabel;
       }else if(data.type==='error'){stop('Hand tracker could not run. Try another browser or re-enable.');}
     };
     worker.postMessage({type:'init'});

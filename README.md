@@ -11,6 +11,7 @@ Interactive visual artworks by Emil Goodman.
 - Silt II — Dynamic Granular Matter
 - Weave II — Elastic Resonance
 - Strata IV — Exclusion Ring
+- Aerosol I — Faulty Nozzle
 
 ## Open and explore
 The root index lists every curated work. Every catalog ID has a permanent `/play/?work=<id>` launch link with Index, Previous and Next navigation. Older experiment paths remain available.
@@ -84,3 +85,13 @@ The dashed circular tool is now an impenetrable exclusion boundary. A grain's co
 All Strata III material settings remain: exactly 5000 permanent glyphs, the 1667 / 1667 / 1666 independent layer split, half-Strata-II scale, held multidirectional wind, inversion and directional stereo sound. Strata III remains preserved at `/experiments/strata/v3/`.
 
 Verification: `node --test tests/strata-v4.test.mjs tests/catalog.test.mjs`; `tests/strata-v4-audio.html` and `tests/strata-v4-ui.html` cover the retained sound graph and sustained hand/keyboard states.
+
+## Aerosol I — Faulty Nozzle
+
+A white full-screen paint surface receives dense, tiny uncommon glyphs from an irregular circular spray. Holding the pointer, touch, Space or a tracked fist opens the faulty nozzle. Every newly started hold selects a gray at least 20% away from the previous stroke, while repeated hits in one spatial cell replace its glyph instead of stacking objects.
+
+The optimized stain layer keeps up to 28,000 unique painted cells separate from a bounded moving mist. Sustained local spraying saturates glyph cells and starts uneven downward trails; release removes their feed, lets them slow and dries the marks permanently. At rest, the nozzle emits a sparse all-direction leak that falls out of frame. A brush slider changes the irregular footprint from 18 to 150 pixels.
+
+The sound combines a very quiet filtered leak, three stereo white-noise spray bands and short randomized coughs for faulty bursts. The artwork remains on white during every input state. Camera processing remains local.
+
+Verification: `node --test tests/aerosol.test.mjs tests/catalog.test.mjs`. `tests/aerosol-audio.html` renders the real leak, spray, sputter and short echo graph; `tests/aerosol-ui.html` verifies open-hand aiming, fist strokes, gray changes, keyboard spray and the absence of inversion.

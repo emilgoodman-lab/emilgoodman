@@ -1,8 +1,16 @@
 # Current public lab status / 2026-09-13
 
-The seven-work collection is LIVE at https://interactive-visual-lab.vercel.app/. GitHub: emilgoodman-lab/emilgoodman. Each player has Previous / Next / Index. See PUBLISHING.md for the release workflow.
+The eight-work collection is LIVE at https://interactive-visual-lab.vercel.app/. GitHub: emilgoodman-lab/emilgoodman. Each player has Previous / Next / Index. See PUBLISHING.md for the release workflow.
 
 The records below describe earlier local stages and are historical, not current deployment status.
+
+## Aerosol I — Faulty Nozzle / 2026-09-13
+
+- Release candidate: `/experiments/aerosol/v1/`; stable player `/play/?work=aerosol`. All seven earlier catalog works and versioned paths remain preserved.
+- Dense tiny uncommon glyphs form an irregular near-circular spray on white. Every new pointer hold or fist closure selects a gray at least 20% from the previous stroke; repeated hits rewrite one spatial cell rather than layering duplicate objects.
+- Sustained local spraying creates wet saturation and downward ASCII drips that stop and dry after release. The idle nozzle emits a sparse falling leak; the brush radius is adjustable from 18 to 150 pixels.
+- Sound layers a very quiet filtered leak, three stereo white-noise spray bands, randomized faulty-nozzle coughs and a short spatial echo. No interaction inverts the image.
+- Eight catalog and deterministic physics checks passed. The actual audio graph verified the faint leak, dense stereo spray, stronger broken-nozzle state and safe peaks. Synthetic open-hand, sustained-fist, second-shade and keyboard states passed without inversion. Local browser inspection confirmed the 008 / 008 player, white surface, tiny glyph spray, irregular satellites and multiple gray layers. All 78 lab tests passed.
 
 ## Strata IV — Exclusion Ring / 2026-09-13
 
