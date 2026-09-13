@@ -1,15 +1,24 @@
 # Current public lab status / 2026-09-13
 
-The five-work collection is LIVE at https://interactive-visual-lab.vercel.app/. GitHub: emilgoodman-lab/emilgoodman. The index lists Organism IV, Chain Choir III, Abyssal I, Rotor I and Silt; each player has Previous / Next / Index. See PUBLISHING.md for the release workflow.
+The five-work collection is LIVE at https://interactive-visual-lab.vercel.app/. GitHub: emilgoodman-lab/emilgoodman. Weave I is the next tested release. Each player has Previous / Next / Index. See PUBLISHING.md for the release workflow.
 
 The records below describe earlier local stages and are historical, not current deployment status.
 
+## Weave I — Elastic Field / 2026-09-13
+
+- New independent artwork: `/experiments/weave/v1/`; planned stable player `/play/?work=weave`. All five earlier artworks remain preserved.
+- A regular screen-filling lattice of 90 permanent uncommon glyphs runs as an elastic X/Y/Z wave simulation. Pointer, touch and open-hand dwell build amplitude and propagation range.
+- Held pointer, Space or tracked fist pulls a broad area into an amorphous vibrating knot, transmits tension across the surrounding fabric and inverts only while held.
+- Four soft positional voices, stereo air and three feedback echoes form the calm sound. The knot adds three rapidly modulated voices, tremolo, moving filters and dynamic distortion.
+- Six catalog and physics tests passed. The actual OfflineAudioContext graph verified positional pitch change, wave-density growth, stereo separation, echo tail and the stronger distorted knot. Synthetic hand states passed; desktop visuals were inspected.
+
 ## Silt — Granular Matter / 2026-09-13
 
-- Silt II is the tested release candidate at `/experiments/silt/v2/`; the stable player remains `/play/?work=silt`. Silt I is preserved at `/experiments/silt/v1/`.
+- Silt II is live at `/experiments/silt/v2/`; the stable player remains `/play/?work=silt`. Silt I is preserved at `/experiments/silt/v1/`.
 - Gravity now produces a visibly accelerating fall. The larger pulsing circular field combines radial throw, swirl, pointer velocity and lift to move a broad section of the pile.
 - Sound now combines three continuous sand textures and three transient grain families. Collision layers accumulate with activity. In zero gravity the existing atmosphere remains, while field contact adds granular sound through three stereo echoes.
 - Seven automated catalog and physics checks passed. The real OfflineAudioContext graph verified silence at rest, denser multi-layer output under heavy movement, stereo separation and a longer zero-gravity field tail. Synthetic open hand, held fist, tracking-loss and keyboard states passed; local browser showed clean console output.
+- GitHub release commit: `2be6cf4761f720d06e71731e58a37149170f83f3`. Vercel deployment `CpdiREMuuQz3jQo4JhJsjyi771NA` succeeded. The stable public player loaded Silt II with all 2000 grains, sound enabled correctly, Previous / Next navigation remained intact, and the browser console stayed clean.
 
 - New independent artwork: `/experiments/silt/v1/`; player `/play/?work=silt`. Fifth catalog entry; all earlier versions are preserved.
 - 2000 permanent glyph grains from 90 uncommon geometric signs, fixed seeded sizes from 70% to 130%, smooth circular collision bodies, frame walls and 120 Hz granular dynamics.

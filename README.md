@@ -9,6 +9,7 @@ Interactive visual artworks by Emil Goodman.
 - Abyssal — Specimen 06
 - Rotor — Glyph Resonator
 - Silt II — Dynamic Granular Matter
+- Weave I — Elastic Field
 
 ## Open and explore
 The root index lists every curated work. `/play/?work=organism`, `/play/?work=chain-choir`, `/play/?work=abyssal`, `/play/?work=rotor` and `/play/?work=silt` are permanent launch links with Index, Previous and Next navigation. Older experiment paths remain available.
@@ -36,3 +37,11 @@ Verification: `node --test tests/rotor.test.mjs tests/catalog.test.mjs`. The aud
 Collision and field energy drive three continuous granular textures plus three families of individual stereo grains, so dense movement builds into a layered sand-pouring sound. Holding the pointer, Space, or a tracked fist disables gravity and inverts the chamber only for the duration of the hold. Zero gravity keeps the deep electronic atmosphere; the active field adds separate granular impacts through three spatial echoes. Release restores gravity and the dry granular layers. Camera processing remains local. Silt I remains preserved at `/experiments/silt/v1/`.
 
 Verification: `node --test tests/silt-v2.test.mjs tests/catalog.test.mjs`. The actual audio graph is tested in `tests/silt-v2-audio.html`; sustained and released hand states are tested in `tests/silt-v2-ui.html`.
+
+## Weave I — Elastic Field
+
+A screen-filling regular fabric of permanent uncommon geometric glyphs. Pointer, touch or an open tracked hand excites a damped elastic lattice along X, Y and Z. Remaining in one place gradually increases both wave amplitude and propagation range; horizontal and vertical position continuously retune a soft pulsing four-voice resonance.
+
+Holding the pointer or closing a tracked fist pulls a broad region into an amorphous vibrating knot, transmits tension into the surrounding fabric and keeps the chamber inverted for the duration of the hold. The knot adds three rapidly modulated voices, dynamic distortion, tremolo and spatial feedback echoes. Release returns the image immediately and lets the physical fabric unfold back to its exact regular grid.
+
+Verification: `node --test tests/weave.test.mjs tests/catalog.test.mjs`. `tests/weave-audio.html` renders and measures the real calm, positional and distorted Web Audio graphs. `tests/weave-ui.html` verifies open-hand, sustained-fist and tracking-loss states.
