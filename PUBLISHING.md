@@ -25,3 +25,5 @@ Latest artwork release: Weave II, 444371712e4ed85ce9b36e7fad1bafbf98497f07. Verc
 Latest artwork release: Strata I, c11ee6192f84e71d230764143083eecc149a8ee1. Vercel production status succeeded at deployment 52smBoTGNtLsbrn3rgNBBA33o7DG. Seven works are in the catalog; the stable `strata` player selects `/experiments/strata/v1/`.
 
 Latest artwork release: Strata II, 10eecd7cfed03f4e5ff03ebdd49fff84f24315ca. Vercel production status succeeded at deployment 9csjchFW5JKy9fYAqTF1Y8ZYKnCj. The stable `strata` player now selects `/experiments/strata/v2/`; Strata I remains preserved.
+
+Latest artwork release: Strata III, 2a92a768cc1e80f729515666ab2fc3b02467fc61. Vercel production status succeeded at deployment FyrYMY4wJgiz4vvEtoLkK22TUxba. The stable `strata` player now selects `/experiments/strata/v3/`; Strata I and II remain preserved.
