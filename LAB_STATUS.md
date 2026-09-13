@@ -4,6 +4,13 @@ The seven-work collection is LIVE at https://interactive-visual-lab.vercel.app/.
 
 The records below describe earlier local stages and are historical, not current deployment status.
 
+## Strata II — Solid Broom / 2026-09-13
+
+- Release candidate: `/experiments/strata/v2/`; the stable `/play/?work=strata` player now selects it. Strata I remains preserved.
+- Grain render and collision radii are four times the original scale, with the same permanent ±25% size identities and exact 3 × 1000 layer split.
+- The broom applies full force through 92% of its circular footprint and feathers only across the outer 8% rim. The existing multidirectional held wind is unchanged.
+- Eight catalog and Strata II physics checks passed. The browser verified the dense four-times scale, hard circular clearing edge and quiet rest. The actual audio graph passed for rest, contact density, directional stereo wind and echoes; synthetic open-hand, sustained-fist, tracking-loss and keyboard states passed. All 59 lab tests passed; production checks are in progress.
+
 ## Strata I — Sand Table / 2026-09-13
 
 - New independent artwork: `/experiments/strata/v1/`; stable player `/play/?work=strata`. All six earlier catalog works and their versioned paths remain preserved.

@@ -10,7 +10,7 @@ Interactive visual artworks by Emil Goodman.
 - Rotor — Glyph Resonator
 - Silt II — Dynamic Granular Matter
 - Weave II — Elastic Resonance
-- Strata I — Sand Table
+- Strata II — Solid Broom
 
 ## Open and explore
 The root index lists every curated work. Every catalog ID has a permanent `/play/?work=<id>` launch link with Index, Previous and Next navigation. Older experiment paths remain available.
@@ -62,3 +62,9 @@ Three superimposed layers each contain exactly 1000 permanent, uncommon geometri
 Pointer, touch or an open tracked hand acts as a circular broom that pushes, rolls and scatters nearby grains. Holding the pointer, Space, or a tracked fist inverts the chamber and starts a continuously changing multidirectional wind field that moves nearly the whole table. Three continuous sand bands and additive individual impacts become denser with contacts; held wind adds three stereo white-noise bands panned toward its strongest direction and spatial feedback echoes.
 
 Verification: `node --test tests/strata.test.mjs tests/catalog.test.mjs`. `tests/strata-audio.html` renders and measures the real rest, light/dense sweep and left/right turbine graphs; `tests/strata-ui.html` verifies sustained fist, tracking loss and keyboard states.
+
+## Strata II — Solid Broom
+
+The stable Strata player now uses four-times-larger visible and physical grains. A seeded near-regular scatter gives each 1000-grain layer enough room to settle without losing its granular irregularity. The circular sweep is solid across 92% of its radius, with a smooth transition confined to the outermost 8%, so the field behaves like a physical broom instead of a broad gradient. The established multidirectional held wind and sound system remain intact. Strata I stays preserved at `/experiments/strata/v1/`.
+
+Verification: `node --test tests/strata-v2.test.mjs tests/catalog.test.mjs`; `tests/strata-v2-audio.html` and `tests/strata-v2-ui.html` run the sound and synthetic input checks against the revised stable version.
