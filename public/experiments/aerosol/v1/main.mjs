@@ -1,6 +1,8 @@
+import {registerLabAudio} from '../../../lab/audio-bridge.mjs';
 import {AerosolWorld,GLYPHS,CELL,STEP} from './physics.mjs';
 import {AerosolAudio} from './audio.mjs';
 const canvas=document.querySelector('#aerosol'),ctx=canvas.getContext('2d',{alpha:false}),stainCanvas=document.createElement('canvas'),stain=stainCanvas.getContext('2d'),main=document.querySelector('main'),readout=document.querySelector('#readout'),mode=document.querySelector('#mode'),soundButton=document.querySelector('#sound'),pauseButton=document.querySelector('#pause'),brush=document.querySelector('#brush'),brushValue=document.querySelector('#brush-value'),audio=new AerosolAudio(),reduced=matchMedia('(prefers-reduced-motion: reduce)');
+registerLabAudio(audio,()=>paused);
 let world,width=1,height=1,dpr=1,raf=0,last=0,accumulator=0,lastReadout=-1,paused=reduced.matches,hand=false,handFist=false,pointerId=null,spaceDown=false,spraying=false;
 await document.fonts.load('12px LabSymbols');
 const color=shade=>{const value=Math.round(shade*255);return `rgb(${value} ${value} ${value})`;};

@@ -1,7 +1,9 @@
+import {registerLabAudio} from '../../../lab/audio-bridge.mjs';
 import {ChainWorld,STEP} from './physics.mjs';
 import {ChimeAudio,voiceParameters} from './audio.mjs';
 const canvas=document.querySelector('#chains'),ctx=canvas.getContext('2d',{alpha:false});
 const audio=new ChimeAudio(),soundButton=document.querySelector('#sound'),pauseButton=document.querySelector('#pause');
+registerLabAudio(audio,()=>paused);
 const status=document.querySelector('#status'),readout=document.querySelector('#readout');
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const glyphs=Array.from('◈◇◊◌◍◎◉◐◑◒◓◔◕◖◗◘◙◚◛◜◝◞◟◠◡◢◣◤◥◧◨◩◪◫◬◭◮◰◱◲◳◴◵◶◷◸◹◺◿▣▤▥▦▧▨▩▰▱△▽▷◁▵▿▹◃⌖⌘⎔⬡⬢⬣⬠⬟⯁⯂⯃⯄⯅⯆⯇⯈');

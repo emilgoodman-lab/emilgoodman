@@ -1,7 +1,9 @@
+import {registerLabAudio} from '../../../lab/audio-bridge.mjs';
 import {AbyssalWorld,STEP} from './physics.mjs';
 import {CreatureAudio} from './audio.mjs';
 const canvas=document.querySelector('#creature'),ctx=canvas.getContext('2d',{alpha:false}),main=document.querySelector('main'),readout=document.querySelector('#readout'),status=document.querySelector('#status');
 const soundButton=document.querySelector('#sound'),pauseButton=document.querySelector('#pause'),flashButton=document.querySelector('#flash'),audio=new CreatureAudio();
+registerLabAudio(audio,()=>paused);
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const glyphs=Array.from('◈◇◊◌◍◎◉◐◑◒◓◔◕◖◗◘◙◚◛◜◝◞◟◠◡◢◣◤◥◧◨◩◪◫◬◭◮◰◱◲◳◴◵◶◷◸◹◺◿▣▤▥▦▧▨▩▰▱△▽▷◁▵▿▹◃⌖⌘⎔⬡⬢⬣⬠⬟⯁⯂⯃⯄⯅⯆⯇⯈');
 await document.fonts.load('20px LabSymbols');

@@ -1,6 +1,8 @@
+import {registerLabAudio} from '../../../lab/audio-bridge.mjs';
 import {SiltWorld,GLYPHS,STEP} from './physics.mjs';
 import {SiltAudio} from './audio.mjs';
 const canvas=document.querySelector('#silt'),ctx=canvas.getContext('2d',{alpha:false}),main=document.querySelector('main'),readout=document.querySelector('#readout'),mode=document.querySelector('#mode'),soundButton=document.querySelector('#sound'),pauseButton=document.querySelector('#pause'),audio=new SiltAudio();
+registerLabAudio(audio,()=>paused);
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');let world,width=1,height=1,dpr=1,raf=0,last=0,accumulator=0,lastReadout=-1,paused=reduced.matches,hand=false,handFist=false,pointerId=null,spaceDown=false;
 await document.fonts.load('40px LabSymbols');
 const atlas=GLYPHS.map(glyph=>{const c=document.createElement('canvas');c.width=c.height=72;const a=c.getContext('2d');a.fillStyle='#e6e6e6';a.font='48px LabSymbols';a.textAlign='center';a.textBaseline='middle';a.fillText(glyph,36,34);const pixels=a.getImageData(0,0,72,72).data;let x0=72,y0=72,x1=0,y1=0;for(let y=0;y<72;y++)for(let x=0;x<72;x++)if(pixels[(y*72+x)*4+3]>20){x0=Math.min(x0,x);x1=Math.max(x1,x);y0=Math.min(y0,y);y1=Math.max(y1,y);}return {c,x:x0,y:y0,w:Math.max(1,x1-x0+1),h:Math.max(1,y1-y0+1)};});

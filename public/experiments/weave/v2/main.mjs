@@ -1,6 +1,8 @@
+import {registerLabAudio} from '../../../lab/audio-bridge.mjs';
 import {WeaveWorld,GLYPHS,STEP} from './physics.mjs';
 import {WeaveAudio} from './audio.mjs';
 const canvas=document.querySelector('#weave'),ctx=canvas.getContext('2d',{alpha:false}),main=document.querySelector('main'),readout=document.querySelector('#readout'),mode=document.querySelector('#mode'),soundButton=document.querySelector('#sound'),pauseButton=document.querySelector('#pause'),audio=new WeaveAudio(),reduced=matchMedia('(prefers-reduced-motion: reduce)');
+registerLabAudio(audio,()=>paused);
 let world,width=1,height=1,dpr=1,raf=0,last=0,accumulator=0,lastReadout=-1,paused=reduced.matches,hand=false,handFist=false,pointerId=null,spaceDown=false;
 await document.fonts.load('36px LabSymbols');
 const atlas=GLYPHS.map(glyph=>{const c=document.createElement('canvas');c.width=c.height=64;const a=c.getContext('2d');a.fillStyle='#e6e6e6';a.font='42px LabSymbols';a.textAlign='center';a.textBaseline='middle';a.fillText(glyph,32,30);return c;});

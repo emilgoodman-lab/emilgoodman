@@ -1,9 +1,11 @@
+import {registerLabAudio} from '../../../lab/audio-bridge.mjs';
 import {AbyssalWorld,STEP} from './physics.mjs';
 import {CreatureAudio} from './audio.mjs';
 import {makeCollage} from './collage.mjs';
 import {buildHabitat} from './habitat.mjs';
 import {headPose,easeEnergy} from './head.mjs';
 const canvas=document.querySelector('#creature'),ctx=canvas.getContext('2d',{alpha:false}),audio=new CreatureAudio(),reduced=matchMedia('(prefers-reduced-motion: reduce)');
+registerLabAudio(audio,()=>paused);
 const skin=await makeCollage();
 let habitat,headEnergy=0;
 let world,width=1,height=1,raf=0,last=0,accumulator=0,paused=reduced.matches,hand=false,pointerId=null,soundPending=false;
